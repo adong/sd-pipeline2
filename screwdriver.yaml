@@ -3,7 +3,7 @@ shared:
 
 jobs:
   main:
-    requires: [~pr, ~commit, ~sd5869:main]
+    requires: [~pr, ~commit, ~sd@5869:main]
     steps:
       - init: npm install
       - test: npm test
