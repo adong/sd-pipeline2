@@ -2,8 +2,8 @@ shared:
     image: node:12
 
 jobs:
-  main:
-    requires: [~pr, ~commit, ~sd@5869:main]
+  dependentJob:
+    requires: [~sd@5869:main]
     steps:
       - init: npm install
       - test: npm test
