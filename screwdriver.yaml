@@ -1,0 +1,10 @@
+shared:
+    image: node:12
+
+jobs:
+  main:
+    requires: [~pr, ~commit]
+    steps:
+      - init: npm install
+      - test: npm test
+
