@@ -3,7 +3,7 @@ shared:
 
 jobs:
   dependentJob:
-    requires: [~sd@5869:main]
+    requires: [~sd@5868:main]
     steps:
       - init: npm install
       - test: npm test
